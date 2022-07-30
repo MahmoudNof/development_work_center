@@ -1,0 +1,459 @@
+/* start global css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:"abod1" ;
+}
+.container{
+    width: 85%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+@font-face {
+    font-family:"abod1" ;
+    src: url(..//webfonts/Cairo-ExtraLight.ttf);
+}
+/* end global css */
+
+/* start sec-1 css */
+.sec-1{
+    height: 100vh;
+    background-color: rgb(245, 245, 245);
+    background-image: url(..//image/Group\ 128.png);
+    background-size: 820px 620px;
+    background-repeat: no-repeat;
+}
+/* start navbar css */
+.sec-1 .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.sec-1 .navbar .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec-1 .navbar .logo h1{
+    color: rgb(211, 20, 20);
+    margin-right: 10px;
+    font-size: 19px;
+}
+.sec-1 .navbar .list-navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec-1 .navbar ul{
+    display: flex; 
+    margin-left: 220px;
+}
+.sec-1 .navbar ul li{
+    padding: 5px;
+    list-style-type: none;
+    margin-left: 22px;
+}
+.sec-1 .navbar ul li a{
+    color: white;
+    font-size: 15px;
+}
+.sec-1 .navbar ul li a::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0%;
+    background-color: white;
+    margin: auto;
+    transition: all 0.36s ease-in-out;
+    margin-top: 3.5px;
+}
+.sec-1 .navbar ul li a:hover::after{
+    width: 100%;
+}
+.sec-1 .navbar .list-navbar .active{
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 5px;
+    padding-bottom: 3px;
+    border: 1.5px solid white;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+.sec-1 .navbar .list-navbar .active:hover{
+    background-color: white;
+    border: 1.5px solid rgb(190, 190, 190);
+    border-radius: 3px;
+    color: rgb(153, 0, 0);
+    font-weight: bold;
+}
+/* end navbar css */
+
+/* start main-sec-1 css */
+.sec-1 .main-sec-1{
+    display: flex;
+}
+.sec-1 .main-sec-1 .right{
+    margin-top: 100px;
+}
+.sec-1 .main-sec-1 .right h1{
+    font-size: 60px;
+}
+.sec-1 .main-sec-1 .right h2{
+    font-size: 30px;
+    width: 90%;
+    margin: left;
+    margin-bottom: 50px;
+
+}
+.sec-1 .main-sec-1 .right a{
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    padding: 3px 30px;
+    background-color: rgb(168, 5, 5);
+    border-radius: 20px;
+    margin-right: 20px;
+    border: 1.5px dotted transparent;
+    transition: all 0.3s ease-in-out ;
+}
+.sec-1 .main-sec-1 .right a:hover{
+    background-color: rgb(216, 207, 209);
+    border: 1.5px dotted rgb(255, 255, 255);
+    box-shadow: 6px 10px 6px 0.5px rgb(155, 31, 31);
+    color: rgb(5, 5, 5);
+    font-weight: bold;
+}
+.sec-1 .main-sec-1 img{
+    margin-top: 50px;
+    width: 480px;
+    height: 380px;
+}
+/* start meadia phone */
+@media (max-width: 768px) {
+    .sec-1{
+        background-image: none;
+    }
+    .sec-1 .navbar .list-navbar{
+        display: none;
+    }
+    .sec-1 .navbar .logo h1{
+        color: rgb(39, 39, 39);
+        margin-right: 40px;
+        font-size: 20px;
+    }
+    .sec-1 .navbar .spans {
+        display: inline-block;
+        cursor: pointer;
+    }
+    .sec-1 .navbar .spans span {
+        display: block;
+        height: 3px;
+        width: 40px;
+        background-color: rgb(211, 20, 20);
+        margin-top: 5px;
+    }
+    .sec-1 .main-sec-1 img{
+        display: none;
+    }
+    .sec-1 .main-sec-1 .right{
+        margin: auto;
+        margin-right: 10px;
+        margin-top: 50px;
+        background-color: rgba(0, 0, 0, 0.685);
+        border-radius: 10px;
+        height: 160px;
+    }
+    .sec-1 .main-sec-1 .right h1{
+        font-size: 40px;
+        margin-right: 110px;
+    }
+    .sec-1 .main-sec-1 .right h2{
+        font-size: 19px;
+        margin-right: 25px;
+        color: rgb(218, 218, 218);
+    }
+    .sec-1 .main-sec-1 .right a{
+        margin-right: 110px;
+
+    }
+}
+/* end meadia phone */
+
+/* end main-sec-1 css */
+
+/* end sec-1 css */
+
+/* start sec-2 */
+.sec-2>img{
+    width: 70px;
+    height: 130px;
+    margin-top: 120px;
+}
+/* start word top sec-2 css  */
+.sec-2 .word{
+    margin-top: -250px;
+}
+.sec-2 .word h1{
+    padding: 0 8px;
+    font-size: 45px;
+    font-weight: bold;
+    border-bottom: 4px solid brown;
+    width: fit-content;
+    margin: auto;
+}
+/* end word top sec-2 css  */
+/* start boxs-sec-2 css */
+.sec-2 .container .boxs-sec-2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;  
+}
+/* start boxs and box css */
+.sec-2 .boxs{
+    width: 30%;
+    box-shadow: 2px 2px 6px 0.5px rgb(243, 214, 214);
+    margin-top: 80px;
+    border-radius: 5px;
+    margin-left: 20px;
+}
+.sec-2 .boxs .box{
+    position: relative;
+}
+.sec-2 .boxs .box img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: -50px;
+    right: 112px;
+}
+.sec-2 .boxs .box h1{
+    padding-top: 48px;
+    text-align: center;
+    color: rgb(85, 85, 85);
+}
+.sec-2 .boxs .box p{
+    font-size: 17.5px;
+    text-align: center;
+    padding: 15px 15px;
+    margin-bottom: 25px;
+    color: rgb(141, 141, 141);
+    line-height: 1.5;
+}
+/* end boxs and box css */
+
+/* end boxs-sec-2 css */
+
+/* start boxs-sec-2-part2 css */
+.sec-2 .container .boxs-sec-2-part2{
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+    margin-top: -20px;
+    padding-bottom: 90px;
+}
+/* start media phone sec-2 */
+@media (max-width:768px){
+    .sec-2 .container .boxs-sec-2{
+        display: block;
+        margin-right: 70px;
+    }
+    .sec-2 .container .boxs-sec-2 .boxs{
+        width: 250px;
+    }
+    .sec-2 .boxs .box{
+        position: relative;
+    }
+    .sec-2 .boxs .box img{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        top: -50px;
+        right: 74px;
+    }
+    .sec-2 .container .boxs-sec-2-part2{
+        display: block;
+        margin-right: 70px;
+    }
+    .sec-2 .container .boxs-sec-2-part2 .boxs{
+        width: 250px;
+    }
+}
+/* end media phone sec-2 */
+
+/* end boxs-sec-2-part2 css */
+
+/* end sec-2 */
+
+/* start sec-3 css */
+.sec-3{
+    background-color: rgb(155, 31, 31);
+    padding: 15px 0;
+}
+.sec-3 h1{
+    margin: auto;
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    padding: 0px 10px;
+    border-bottom: 3px solid white;
+    width: fit-content;
+}
+/* start main-sec-3 css */
+.sec-3 .main-sec-3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.sec-3 .main-sec-3 img{
+    width: 450px;
+    height: 390px;
+}
+.sec-3 .main-sec-3 .word-sec-3{
+    width: 38%;
+}
+.sec-3 .main-sec-3 p{
+    font-size: 20px;
+    text-align: right;
+    color: white;
+    font-weight: 600;
+}
+/* start media phone sec-3 */
+@media (max-width:768px){
+    .sec-3 h1{
+        font-size: 20px;
+    }
+    .sec-3 .main-sec-3 img {
+        width: 150px;
+        height: 170px;
+    }
+    .sec-3 .main-sec-3 .word-sec-3{
+        width: 100%;
+        margin-right: 20px;
+    }
+    .sec-3 .main-sec-3 p {
+        font-size: 10px;
+    }
+}
+/* end media phone sec-3 */
+
+/* end main-sec-3 css */
+/* end sec-3 css */
+
+/* start sec-4 css */
+.sec-4{
+    padding: 50px 0;
+    background-color: rgb(250, 249, 249);
+}
+.sec-4 .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec-4 .icon{
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    margin-right: 60px;
+    box-shadow: 0 2px 3px 1px rgb(219, 219, 219);
+    border-radius: 50%;
+    background-color: white
+}
+.sec-4 .icon i{
+    margin-top: 20px;
+    font-size: 45px;
+    color: rgb(175, 29, 29);
+}
+/* start media phone sec-4 */
+@media (max-width:768px){
+    .sec-4 .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 400px;
+    }
+    .sec-4 .icon{
+        width: 90px;
+        margin-top: 10px;
+        margin-right: 0px;
+        margin-left: 20px;
+    }
+}
+/* end media phone sec-4 */
+/* end sec-4 css */
+
+/* start sec-5 css */
+.sec-5{
+    background-color:rgb(155, 31, 31);
+}
+/* start paernt sec-5 css */
+.sec-5 .paernt{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+/* start img-wprd sec-5 css */
+.sec-5 .paernt .img-word{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sec-5 .paernt .img-word img{
+    width: 50px;
+    height: 50px;
+}
+.sec-5 .paernt .img-word h4{
+    margin-right: 20px;
+    color: rgba(245, 245, 245, 0.808);
+    font-size: 11px;
+}
+/* end img-word sec-5 css */
+/* start address css */
+.sec-5 .paernt .address{
+    margin-left: 450px;
+}
+.sec-5 .paernt .address p{
+    color: rgba(245, 245, 245, 0.87);
+    font-size: 13px;
+    line-height: 1.4;
+}
+/* end address css */
+/* start contact css */
+.sec-5 .paernt .contact p{
+    color: rgba(245, 245, 245, 0.849);
+    font-size: 13px;
+    line-height: 1.4;
+}
+/* end contact css */
+
+/* end paernt sec-5 css */
+
+/* start copy-right css */
+.sec-5 .copy-right{
+    text-align: center;
+    padding-bottom: 3px;
+}
+.sec-5 p{
+    font-size: 10px;
+    color: white;
+}
+/* start media phone sec-5 */
+@media (max-width:768px){
+   
+    .sec-5 .paernt .address{
+       display: none;
+    }
+}
+/* end media phone sec-5 */
+
+/* end copy-right css */
+
+/* end sec-5 css */
+
